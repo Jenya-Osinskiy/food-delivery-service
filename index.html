@@ -5,49 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-        <a href="#">logo</a>
-        <button type="button">- - -</button>
-        <menu>
-            <div class="mob-menu">
-                <button type="button">X</button>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+    <header class="header">
+        <div class="header-box">
+            <a href="#">
+                <svg class="header-logo" width="66" height="52">
+                    <use href="./images/sp.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <button type="button" class="header-open-menu"><svg class="header-logo" width="28" height="28">
+                    <use href="./images/sp.svg#icon-open-m"></use>
+                </svg></button>
+        </div>
+        <menu class="menu-box">
+            <div class="menu-mob">
+                <button type="button" class="mob-close-btn"><svg class="mob-close-img" width="11" height="11">
+                        <use href="./images/sp.svg#icon-mob-close"></use>
+                    </svg></button>
+                <div class="menu-mob-list">
+                    <a href="#" class="menu-mob-start">Home</a>
+                    <a href="#" class="menu-mob-link">About</a>
+                    <a href="#" class="menu-mob-link">Service</a>
+                    <a href="#" class="menu-mob-link">Menu</a>
+                    <a href="#" class="menu-mob-end">Contact</a>
+                </div>
             </div>
         </menu>
+
     </header>
-    <main>
-        <section>
-            <h1>Enjoy Your Favorite Food From Anywhere</h1>
-            <p>With just a few clicks, you can have your favorite meals delivered straight to your doorstep, no matter
+    <main class="main-box">
+        <section class="enjoy">
+            <h1 class="enjoy-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="enjoy-text">With just a few clicks, you can have your favorite meals delivered straight to your
+                doorstep, no matter
                 where you are.
                 Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.</p>
-            <button type="button">Order Now</button>
-        </section>
-        <section>
+            <button type="button" class="enjoy-btn">Order Now</button>
             <img src="" alt="">
-            <h2>What’s Special About Our Offerings</h2>
-            <p>With our platform, you can browse through a diverse selection of cuisines and local restaurants, and
-                choose from a
-                variety of dishes that cater to your specific taste buds.</p>
-            <h3>Fasest Delivery</h3>
-            <p>Our advanced logistics system and dedicated delivery partners ensure that your meals are delivered to you
-                within
-                30-minutes.</p>
-            <h3>Easy to order</h3>
-            <p>You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place
-                your order in
-                just a few clicks.</p>
-            <button type="button">Order Now</button>
-            <a href="">Read More</a>
+        </section>
+        <section class="special">
+            <svg class="special-fon"></svg>
+            <div class="special-content">
+                <img src="./images/spec-apple.png" alt="apple" class="special-apple">
+                <h2 class="special-title">What’s Special About Our Offerings</h2>
+                <p class="special-text">With our platform, you can browse through a diverse selection of cuisines and
+                    local restaurants, and
+                    choose from a
+                    variety of dishes that cater to your specific taste buds.</p>
+                <svg width="48" height="48">
+                    <use href="./images/sp.svg#icon-Icon-Deliv"></use>
+                </svg>
+                <h3 class="special-title-item">Fasest Delivery</h3>
+                <p class="special-text">Our advanced logistics system and dedicated delivery partners ensure that your
+                    meals are delivered to
+                    you
+                    within
+                    30-minutes.</p>
+                <svg width="48" height="48">
+                    <use href="./images/sp.svg#icon-Icon-Order"></use>
+                </svg>
+                <h3 class="special-title-item">Easy to order</h3>
+                <p class="special-text">You can browse through a wide variety of cuisines and restaurants, select your
+                    favorite meals, and
+                    place
+                    your order in
+                    just a few clicks.</p>
+
+                <button type="button" class="special-btn-now">Order Now</button>
+                <a href="#" class="special-more">Read More <svg class="special-more-img" width="6" height="10">
+                        <use href="./images/sp.svg#icon-more"></use>
+                    </svg></a>
+
+            </div>
         </section>
         <section>
             <h2>Some of Our Favorites</h2>
@@ -64,6 +102,7 @@
     <footer>
 
     </footer>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
