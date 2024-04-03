@@ -45,7 +45,7 @@ input {
     font-family: inherit;
 }
 
-/* ************************************** */
+/* ******************header******************** */
 
 .header {
     margin: 0 auto;
@@ -75,14 +75,17 @@ input {
     
 }
 
-.header-logo {
+.header-icon {
     fill: #7eb101;
     transition: fill 250ms ease-in-out;
 }
-.header-logo:hover,
-.header-logo:focus {
+
+
+.header-icon:hover,
+.header-icon:focus {
     fill: #ffe550;
 }
+
 
 .menu-box {
     position: relative;
@@ -177,7 +180,7 @@ input {
 
 
 
-/* ********************************* */
+/* ****************enjoy***************** */
 
 .main-box {
     margin: 0 auto;
@@ -225,23 +228,22 @@ input {
 }
 
 
-/* ********************************************* */
+/* ********************special************************* */
 
 .special {
     position: relative;
-    
-    
+      
 }
 .special-fon {
     position: absolute;
-    background-image: url("../images/spec-fon.svg");
+    background-image: url("../images/spec-fon-mob.svg");
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    z-index: -1;
-
+    z-index: -2;
 }
+
 .special-content {
     padding: 41px 20px 72px 20px;
 }
@@ -279,7 +281,7 @@ input {
     font-size: 13px;
     line-height: 1.5;
     color: #2c2c2c;
-    transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out;
     margin-right: 24px;
     cursor: pointer;
 }
@@ -300,4 +302,270 @@ input {
     margin-left: 3px;
     
 }
- 
+
+/* *******************Favorites*********************** */
+
+.favorites {
+    padding: 60px 20px;
+}
+
+.favorites-title {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #2c2c2c;
+}
+
+.favorites-text {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #2c2c2c;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.favorites-list { 
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.favorites-img {
+    border-radius: 116px;
+    width: 223px;
+    height: 223px;
+    
+}
+
+.favorite-item {
+    border: 11px solid #ffe550;
+    border-radius: 140px;
+    background-color: #fefefe;
+    max-width: 280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 250ms ease-in-out;
+}
+
+.favorite-item:active,
+.favorite-item:focus,
+.favorite-item:hover {
+    border: 11px solid #bbf330;
+}
+
+/* *************************Customers**************************** */
+
+.customers {
+    position: relative;
+}
+
+.customers-content {
+    padding: 60px 20px 60px 20px;
+}
+
+.customers-fon {
+    position: absolute;
+    background-image: url("../images/cust-fon-mob.svg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.customers-title {
+    font-weight: 700;
+    font-size: 28px;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.customers-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #2c2c2c;
+    margin-bottom: 32px;
+}
+
+.customers-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+
+.customers-item {
+    background-color: #fefefe;
+    padding: 8px;
+    border-radius: 0 30px 30px 30px;
+}
+
+.customers-comment-text  {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2c2c2c;
+    margin-top: 30px;
+    margin-bottom: 38px;
+}
+.customers-stars {
+    fill: #ffe550;
+}
+.customers-item-box {
+    display: flex;
+    align-items: center;
+}
+
+.comment-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2c2c2c;
+    margin-left: 16px;
+    border-right: 0.85px solid #7eb101;
+    padding-right: 16px;
+   
+}
+.comment-text {
+    font-weight: 400;
+}
+
+/* *******************Subscribe******************** */
+
+.subscribe {
+    padding: 60px 20px 60px 20px;
+    position: relative;
+}
+
+.subscribe-banana {
+    position: absolute;
+    top: -43px;
+}
+
+.subscribe-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.subscribe-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2c2c2c;
+    margin-bottom: 40px;
+}
+.subscribe-btn {
+    display: block;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 103px;
+    height: 42px;
+    background-color: #bbf330;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #2c2c2c;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+    margin-left: auto;
+    margin-top: 20px;        
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: #ffe450;
+}
+
+
+.subscribe-input {
+    border: 1px solid #ffe550;
+    border-radius: 30px;
+    width: 254px;
+    height: 100%;
+    background-color: transparent;
+    outline: transparent;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #505050;
+    padding: 12px;    
+}
+
+/* ************************************ */
+.footer {
+    margin: 0 auto;
+    width: 320px;
+    box-shadow: 0 24px 24px 0 rgba(105, 105, 105, 0.1);
+    background: #fefefe;
+    position: relative;
+}
+
+.footer-content {
+    padding: 64px 14px 60px 26px;
+}
+
+.footer-logo {
+    position: absolute;
+    top: 60px;
+    left: 26px;
+}
+
+.footer-menu {
+    text-align: center;  
+}
+
+.footer-list {
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.subscribe-form-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.subscribe-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2c2c2c;
+    
+}
+
+.footer-item:hover,
+.footer-item:focus {
+    color: #7eb101;
+}
+
+.footer-btn {
+    border: 1px solid #7eb101;
+    border-radius: 30px;
+    width: 103px;
+    height: 35px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #2c2c2c;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+    margin-top: 20px;   
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+    background-color: #bbf330;
+    border: none;
+}
+
