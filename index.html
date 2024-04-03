@@ -209,6 +209,45 @@
         <img class="footer-img-left" src="./images/footer2-mob-2x.png" alt="fruits" width="110" height="116">
         <img class="footer-img-bottom" src="./images/footer3-mob-2x.png" alt="fruits" width="253" height="66">
     </footer>
+
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <button type="button" class="modal-close-but"><svg class="modal-close-img" width="12" height="12">
+                    <use href="./images/sp.svg#icon-mob-close"></use>
+                </svg></button>
+            <p class="modal-text">Order Form</p>
+
+            <form class="modal-form">
+                <div class="modal-form-cont">
+                    <label for="user-name" class="modal-form-label">Name</label>
+                    <div class="modal-field">
+                        <input id="user-name" class="modal-form-input" type="text" name="user-name"
+                            placeholder="Your name">
+                    </div>
+                </div>
+
+                <div class="modal-form-cont">
+                    <label for="user-tel" class="modal-form-label">Phone number</label>
+                    <div class="modal-field">
+                        <input id="user-tel" class="modal-form-input" type="tel" name="contact_tel"
+                            placeholder="+38(0_ _) _ _ _   _ _   _ _">
+                    </div>
+                </div>
+
+                <div class="modal-form-cont">
+                    <label for="user-email" class="modal-form-label">E-mail</label>
+                    <div class="modal-field">
+                        <input id="user-email" class="modal-form-input" type="email" name="email"
+                            placeholder="example@gmail.com">
+                    </div>
+
+                </div>
+                <button type="submit" class="modal-submit-but" aria-label="Send">Send</button>
+            </form>
+        </div>
+    </div>
+
     <script src="./modal.js"></script>
 </body>
 
