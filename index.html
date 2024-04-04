@@ -55,6 +55,7 @@
 
     </header>
     <main class="main-box">
+
         <section class="enjoy">
             <h1 class="enjoy-title">Enjoy Your Favorite Food From Anywhere</h1>
             <p class="enjoy-text">With just a few clicks, you can have your favorite meals delivered straight to your
@@ -64,16 +65,19 @@
             <button type="button" class="enjoy-btn">Order Now</button>
             <div class="carusel">
                 <ul class="carusel-list">
-                    <li><a href="#" class="carusel-item "><img src="./images/tablet/food1-tablet-2x.png" alt="food"
-                                class="carusel-img" width="292" height="292"></a>
+                    <li class="carusel-item"><img src="./images/tablet/food1-tablet-2x.png" alt="food"
+                            class="carusel-img" width="292" height="292">
                     </li>
-                    <li><a href="#" class=""><img src="" alt="" class=""></a>
+                    <!-- <li class="carusel-item"><img src="./images/tablet/food2-tablet-2x.png" alt="food"
+                            class="carusel-img" width="292" height="292">
                     </li>
-                    <li><a href="#" class=""><img src="" alt="" class=""></a>
-                    </li>
+                    <li class="carusel-item"><img src="./images/tablet/food3-tablet-2x.png" alt="food"
+                            class="carusel-img" width="292" height="292">
+                    </li> -->
                 </ul>
             </div>
         </section>
+
         <section class="special">
             <svg class="special-fon">
                 <!-- <use href="./images/sp.svg#icon-Special-img" class="special-fon-img"></use> -->
@@ -107,24 +111,32 @@
                     local restaurants, and
                     choose from a
                     variety of dishes that cater to your specific taste buds.</p>
-                <svg width="48" height="48">
-                    <use href="./images/sp.svg#icon-Icon-Deliv"></use>
-                </svg>
-                <h3 class="special-title-item">Fasest Delivery</h3>
-                <p class="special-text">Our advanced logistics system and dedicated delivery partners ensure that your
-                    meals are delivered to
-                    you
-                    within
-                    30-minutes.</p>
-                <svg width="48" height="48">
-                    <use href="./images/sp.svg#icon-Icon-Order"></use>
-                </svg>
-                <h3 class="special-title-item">Easy to order</h3>
-                <p class="special-text">You can browse through a wide variety of cuisines and restaurants, select your
-                    favorite meals, and
-                    place
-                    your order in
-                    just a few clicks.</p>
+                <div class="special-box">
+                    <div class="boxes"><svg width="48" height="48">
+                            <use href="./images/sp.svg#icon-Icon-Deliv"></use>
+                        </svg>
+                        <h3 class="special-title-item">Fasest Delivery</h3>
+                        <p class="special-text-box">Our advanced logistics system and dedicated delivery partners ensure
+                            that
+                            your
+                            meals are delivered to
+                            you
+                            within
+                            30-minutes.</p>
+                    </div>
+                    <div class="boxes"><svg width="48" height="48">
+                            <use href="./images/sp.svg#icon-Icon-Order"></use>
+                        </svg>
+                        <h3 class="special-title-item">Easy to order</h3>
+                        <p class="special-text-box">You can browse through a wide variety of cuisines and restaurants,
+                            select
+                            your
+                            favorite meals, and
+                            place
+                            your order in
+                            just a few clicks.</p>
+                    </div>
+                </div>
 
                 <button type="button" class="special-btn-now">Order Now</button>
                 <a href="#" class="special-more">Read More <svg class="special-more-img" width="6" height="10">
@@ -133,18 +145,87 @@
 
             </div>
         </section>
+
         <section class="favorites">
             <h2 class="favorites-title">Some of Our Favorites</h2>
             <p class="favorites-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <ul class="favorites-list">
-                <li><a href="#" class="favorite-item"><img src="./images/gamburger-mob-2x.png" alt="gamburger"
-                            class="favorites-img"></a></li>
-                <li><a href="#" class="favorite-item"><img src="./images/pasta-mob-2x.png" alt="pasta"
-                            class="favorites-img"></a></li>
-                <li><a href="#" class="favorite-item"><img src="./images/pizza-mob-2x.png" alt="pizza"
-                            class="favorites-img"></a></li>
+                <li class="favorites-item"><a href="#" class="favorite-link">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/gamburger-des-2x.png 2x, ./images/desktop/gamburger-des.png  1x"
+                                media="(min-width: 1280px)">
+                            <source
+                                srcset="./images/tablet/gamburger-tab-2x.png 2x, ./images/tablet/gamburger-tab.png  1x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mob/gamburger-mob-2x.png 2x, ./images/mob/gamburger-mob.png 1x"
+                                media="(min-width: 320px)">
+                            <img src="./images/desktop/gamburger-des.png" alt="gamburger" class="favorites-img"
+                                loading="lazy">
+                        </picture>
+                    </a></li>
+                <li class="favorites-item"><a href="#" class="favorite-link">
+                        <picture>
+                            <source srcset="./images/desktop/pasta-des-2x.png 2x, ./images/desktop/pasta-des.png  1x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/pasta-tab-2x.png 2x, ./images/tablet/pasta-tab.png  1x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mob/pasta-mob-2x.png 2x, ./images/mob/pasta-mob.png 1x"
+                                media="(min-width: 320px)">
+                            <img src="./images/desktop/pasta-des.png" alt="gamburger" class="favorites-img"
+                                loading="lazy">
+                        </picture>
+                    </a></li>
+                <li class="favorites-item"><a href="#" class="favorite-link">
+                        <picture>
+                            <source srcset="./images/desktop/pizza-des-2x.png 2x, ./images/desktop/pizza-des.png  1x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/pizza-tab-2x.png 2x, ./images/tablet/pizza-tab.png  1x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/mob/pizza-mob-2x.png 2x, ./images/mob/pizza-mob.png 1x"
+                                media="(min-width: 320px)">
+                            <img src="./images/desktop/pizza-des.png" alt="gamburger" class="favorites-img"
+                                loading="lazy">
+                        </picture>
+                    </a></li>
+                <li class="favorites-item favorit-mob-none"><a href="#" class="favorite-link">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/chicken-des-2x.png 2x, ./images/desktop/chicken-des.png  1x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/chicken-tab-2x.png 2x, ./images/tablet/chicken-tab.png  1x"
+                                media="(min-width: 768px)">
+
+                            <img src="./images/desktop/chicken-des.png" alt="gamburger" class="favorites-img"
+                                loading="lazy">
+                        </picture>
+                    </a></li>
+                <li class="favorites-item favorit-mob-none"><a href="#" class="favorite-link">
+                        <picture>
+                            <source srcset="./images/desktop/salat-des-2x.png 2x, ./images/desktop/salat-des.png  1x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/salat-tab-2x.png 2x, ./images/tablet/salat-tab.png  1x"
+                                media="(min-width: 768px)">
+
+                            <img src="./images/desktop/salat-des.png" alt="gamburger" class="favorites-img"
+                                loading="lazy">
+                        </picture>
+                    </a></li>
+                <li class="favorites-item favorit-mob-none"><a href="#" class="favorite-link">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/borshch-des-2x.png 2x, ./images/desktop/borshch-des.png  1x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/borshch-tab-2x.png 2x, ./images/tablet/borshch-tab.png  1x"
+                                media="(min-width: 768px)">
+
+                            <img src="./images/desktop/borshch-des.png" alt="gamburger" class="favorites-img"
+                                loading="lazy">
+                        </picture>
+                    </a></li>
             </ul>
         </section>
+
         <section class="customers">
             <svg class="customers-fon"></svg>
             <div class="customers-content">
@@ -207,6 +288,7 @@
                 </ul>
             </div>
         </section>
+
         <section class="subscribe">
             <img src="./images/banana-mob-2x.png" alt="banana" class="subscribe-banana" width="280" height="78">
             <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
