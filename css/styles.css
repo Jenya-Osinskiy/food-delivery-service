@@ -249,6 +249,39 @@ input {
 }
 .special-apple {
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    position: relative;
+    
+}
+
+.special-ellipse {
+    position: absolute;
+    top: 240px;
+    left: 110px;
+    transform: rotateX(70deg);
+    z-index: 4;
+    fill:rgb(47, 88, 63);
+    filter: blur(30px);   
+}
+
+.apple-ellips {
+    fill: #fefefe;
+    z-index: 3;
+    position: absolute;
+    top: 82px;
+    left: 32px;
+}
+
+.apple-ellips-two {
+    fill: none;
+    z-index: 3;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
 }
 
 .special-title {
