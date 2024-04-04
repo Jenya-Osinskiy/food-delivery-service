@@ -59,9 +59,7 @@ input {
 .header-box {
     display: flex;
     justify-content: space-between; 
-    padding: 10px 20px;
-    
-   
+    padding: 10px 20px;  
 }
 
 .header-open-menu {
@@ -87,11 +85,12 @@ input {
 }
 
 
+
+/* *********************mob-menu************************ */
 .menu-box {
     position: relative;
 }
 .menu-mob {
-    
     position: absolute;
     top: -40px;
     right: 20px;
@@ -104,7 +103,6 @@ input {
     opacity: 0;
     pointer-events: none;
     transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out; 
-    
 }
 
 .is-open {
@@ -178,19 +176,100 @@ input {
     background-color: #bbf330;
 }
 
+/* **********************tabl-menu*********************** */
+.menu {
+    display: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 28px;
+}
+.menu-item {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    transition: color 250ms ease-in-out;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #bbf330;
+}
+.menu-btn {
+    border-radius: 30px;
+    padding: 6px 17px;
+    width: 98px;
+    height: 32px;
+    background-color: #bbf330;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right;
+    color: #2c2c2c;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+    
+}
+
+.menu-btn:hover,
+.menu-btn:focus {
+    background-color: #ffe450;
+}
+
+/* ******************header 768******************** */
+
+
+@media screen and (min-width: 768px) {
+.menu {
+        display: flex;
+    }
+.header {
+    width: 768px;
+}
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 32px;
+}
+.menu-box{
+    display: none;
+}
+.header-open-menu {
+    display: none;
+}
+}
+
+/* ******************header 1280******************** */
+@media screen and (min-width: 1280px) {
+.header {
+        width: 1280px;
+    }
+.header-box {
+    padding: 10px 16px;
+}
+}
+
+
 
 
 /* ****************enjoy***************** */
 
+
+
 .main-box {
     margin: 0 auto;
     width: 320px;
-    box-shadow: 0 24px 24px 0 rgba(105, 105, 105, 0.1);
-    
-    
+    box-shadow: 0 24px 24px 0 rgba(105, 105, 105, 0.1);    
 }
 .enjoy {
     padding: 60px 20px 50px 20px;
+    position: relative;
 }
 .enjoy-title {
     font-weight: 700;
@@ -220,11 +299,72 @@ input {
     border: none;
     cursor: pointer;
     transition: background-color 250ms ease-in-out;
+    
 }
 
 .enjoy-btn:hover,
 .enjoy-btn:focus {
     background-color: #ffe450;
+}
+.carusel {
+    display: none;
+    position: absolute;
+    top: 150px;
+    right: 40px;
+}
+
+.carusel-item {
+    border: 11px solid #ffe550;
+    border-radius: 100%;
+    background-color: #fefefe;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 250ms ease-in-out;
+}
+
+.carusel-item:hover {
+    border: 11px solid #bbf330;
+}
+
+
+/* ******************enjoy 768******************** */
+
+
+@media screen and (min-width: 768px) {
+.main-box {
+    width: 768px;
+}
+.enjoy {
+    padding: 60px 32px 0 32px;
+}
+.enjoy-title {
+    font-size: 42px;
+    line-height: 1.2;
+    width: 537px;
+    margin-bottom: 44px;
+}
+.enjoy-text {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 336px;
+}
+.carusel {
+    display: flex;
+}
+.enjoy-btn {
+    position: absolute;
+    z-index: 10;
+}
+}
+
+
+/* ******************enjoy 1280******************** */
+@media screen and (min-width: 1280px) {
+.main-box {
+        width: 1280px;
+    }
 }
 
 
@@ -245,15 +385,34 @@ input {
 }
 
 .special-content {
-    padding: 41px 20px 72px 20px;
+    padding: 410px 20px 72px 20px;
 }
+
 .special-apple {
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 41px;
+    left: 61px;
     z-index: 5;
-    position: relative;
-    
+    position: absolute;
+    width: 201px;
+    height: 256px;
+}
+
+.special-apple-two {
+    display: none;
+    position: absolute;
+    width: 166px;
+    height: 211px;
+    top: 266px;
+    right: 184px;
+}
+
+.special-apple-three { 
+    display: none;
+    position: absolute;
+    width: 108px;
+    height: 136px;
+    top: 340px;
+    right: 32px;
 }
 
 .special-ellipse {
@@ -263,7 +422,9 @@ input {
     transform: rotateX(70deg);
     z-index: 4;
     fill:rgb(47, 88, 63);
-    filter: blur(30px);   
+    filter: blur(30px); 
+    width: 100px;
+    height: 100px;  
 }
 
 .apple-ellips {
@@ -272,6 +433,8 @@ input {
     position: absolute;
     top: 82px;
     left: 32px;
+    width: 256px;
+    height: 256px;
 }
 
 .apple-ellips-two {
@@ -282,6 +445,8 @@ input {
     left: 20px;
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 100%;
+    width: 274px;
+    height: 274px;
 }
 
 .special-title {
@@ -334,6 +499,76 @@ input {
 .special-more-img {
     margin-left: 3px;
     
+}
+
+
+/* ******************enjoy 768******************** */
+
+
+@media screen and (min-width: 768px) {
+.main-box {
+        width: 768px;
+    }
+
+.special-fon {
+    background-image: url("../images/tablet/spec-fon-tabl.svg");
+}
+.special-content {
+    padding: 560px 32px 91px 32px;
+}
+.special-apple {
+    top: 151px;
+    left: 84px;
+    width: 258px;
+    height: 326px;
+}
+.special-apple-two {
+    display: block;
+}
+
+.special-apple-three {
+    display: block;
+}
+.special-ellipse {
+    top: 423px;
+    left: 165px;
+    width: 100px;
+    height: 100px;  
+}
+
+.apple-ellips {
+    top: 202px;
+    left: 48px;
+    width: 327px;
+    height: 327px;
+}
+
+.apple-ellips-two {
+    top: 185px;
+    left: 31px;
+    width: 357px;
+    height: 357px;
+}
+}
+
+
+/* ******************enjoy 1280******************** */
+@media screen and (min-width: 1280px) {
+    .main-box {
+        width: 1280px;
+}
+.special-apple-two {
+    display: none;           
+}
+.special-apple-three {
+    display: none;
+}
+.special-apple {
+    top: 177px;
+    left: 100px;
+    width: 396px;
+    height: 502px;
+}
 }
 
 /* *******************Favorites*********************** */

@@ -11,12 +11,12 @@ mobclosebtn .addEventListener('click', (e) => {
     menumob.classList.remove('is-open');
 })
 
-let specialbtnnow = document.querySelector('.special-btn-now');
+let menubtn = document.querySelector('.menu-btn');
 let enjoybtn = document.querySelector('.enjoy-btn');
 let modaloverlay = document.querySelector('.modal-overlay');
 let modalclosebut = document.querySelector('.modal-close-but');
 
-specialbtnnow.addEventListener('click', () => {
+menubtn.addEventListener('click', () => {
     modaloverlay.classList.add('is-open');
 })
 
