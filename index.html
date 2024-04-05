@@ -65,8 +65,14 @@
             <button type="button" class="enjoy-btn">Order Now</button>
             <div class="carusel">
                 <ul class="carusel-list">
-                    <li class="carusel-item"><img src="./images/tablet/food1-tablet-2x.png" alt="food"
-                            class="carusel-img" width="292" height="292">
+                    <li class="carusel-item">
+                        <picture>
+                            <source srcset="./images/desktop/food1-des-2x.png 2x, ./images/desktop/food1-des.png  1x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/food1-tab-2x.png 2x, ./images/tablet/food1-tab.png  1x"
+                                media="(min-width: 768px)">
+                            <img src="./images/desktop/food1-des.png" alt="food" class="carusel-img">
+                        </picture>
                     </li>
                     <!-- <li class="carusel-item"><img src="./images/tablet/food2-tablet-2x.png" alt="food"
                             class="carusel-img" width="292" height="292">
@@ -290,7 +296,16 @@
         </section>
 
         <section class="subscribe">
-            <img src="./images/banana-mob-2x.png" alt="banana" class="subscribe-banana" width="280" height="78">
+            <picture>
+                <source srcset="./images/desktop/banana-des-2x.png 2x, ./images/desktop/banana-des.png  1x"
+                    media="(min-width: 1280px)">
+                <source srcset="./images/tablet/banana-tab-2x.png 2x, ./images/tablet/banana-tab.png  1x"
+                    media="(min-width: 768px)">
+                <source srcset="./images/mob/banana-mob-2x.png 2x, ./images/mob/banana-mob.png  1x"
+                    media="(min-width: 320px)">
+
+                <img src="./images/desktop/banana-des.png" alt="banana" class="subscribe-banana" loading="lazy">
+            </picture>
             <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
             <p class="subscribe-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                 in eros elementum tristique.</p>
